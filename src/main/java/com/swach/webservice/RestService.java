@@ -13,7 +13,7 @@ import com.swach.dto.TwitterData;
 import com.google.gson.Gson;
 
 /**
- * Created by krraje on 01/05/15.
+ * Created by swachtest on 01/05/15.
  */
 @Path("/twitter")
 public class RestService {

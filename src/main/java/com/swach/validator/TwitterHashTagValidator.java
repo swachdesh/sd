@@ -16,7 +16,7 @@ import java.util.Set;
 
 
 /**
- * Created by krraje on 26/04/15.
+ * Created by swachtest on 26/04/15.
  */
 public  class TwitterHashTagValidator {
     private boolean myResult;

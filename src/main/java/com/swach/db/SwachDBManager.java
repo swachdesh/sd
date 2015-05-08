@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by krraje on 29/04/15.
+ * Created by swachtest on 29/04/15.
  */
 public class SwachDBManager  {
     public static void insertIntoDatabase(TwitterData twitterData)

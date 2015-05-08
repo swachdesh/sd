@@ -8,7 +8,7 @@ import com.sun.jersey.spi.container.ContainerResponse;
 import com.sun.jersey.spi.container.ContainerResponseFilter;
 
 /**
- * Created by krraje on 01/05/15.
+ * Created by swachtest on 01/05/15.
  */
 public class TwitterResponseFilter implements ContainerResponseFilter{
     @Override

@@ -4,7 +4,7 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
 /**
- * Created by krraje on 01/05/15.
+ * Created by swachtest on 01/05/15.
  */
 public class TwitterConnectionServletListener implements ServletContextListener {
     TwitterSwachListener tw = new TwitterSwachListener();

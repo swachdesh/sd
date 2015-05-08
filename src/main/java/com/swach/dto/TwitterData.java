@@ -1,7 +1,7 @@
 package com.swach.dto;
 
 /**
- * Created by krraje on 29/04/15.
+ * Created by swachtest on 29/04/15.
  */
 public class TwitterData {
 

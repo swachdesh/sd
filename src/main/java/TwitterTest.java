@@ -10,7 +10,7 @@ import twitter4j.conf.ConfigurationBuilder;
 import java.util.Arrays;
 
 /**
- * Created by krraje on 19/04/15.
+ * Created by swachtest on 19/04/15.
  */
 public class TwitterTest {
 

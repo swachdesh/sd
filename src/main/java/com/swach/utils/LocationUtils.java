@@ -9,7 +9,7 @@ import org.apache.commons.lang3.StringUtils;
 import java.util.Arrays;
 
 /**
- * Created by krraje on 05/05/15.
+ * Created by swachtest on 05/05/15.
  */
 public class LocationUtils {
 

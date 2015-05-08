@@ -1,7 +1,7 @@
 package com.swach.utils;
 
 /**
- * Created by krraje on 08/05/15.
+ * Created by swachdesh on 08/05/15.
  */
 public enum  NewCityEnums {
     tinnevelly("tirunelveli"),
@@ -30,7 +30,7 @@ public enum  NewCityEnums {
     sibsagar("sivasagar"),
     garthapuri("guntur"),
     kandenavolu("kurnool"),
-    ellorἤe("eluru"),
+    ellore("eluru"),
     vizagapatam("visakhapatnam"),
     bezawada("vijayawada"),
     cuddapah("ysr district"),
