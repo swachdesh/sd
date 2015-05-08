@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bdaa01f-8ba0-49a7-816b-faeec5e13f9a" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\MyWork\swach_bharat\swbh\sd\swach-bharat.iml" afterPath="" />
-      <change type="MOVED" beforePath="C:\MyWork\swach_bharat\swbh\sd\.idea\dictionaries\krraje.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/swachtest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/swach/dto/LatitudeLongitude.java" afterPath="$PROJECT_DIR$/src/main/java/com/swach/dto/LatitudeLongitude.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/swach/utils/LocationUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/swach/utils/LocationUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/swach/utils/NewCityEnums.java" afterPath="$PROJECT_DIR$/src/main/java/com/swach/utils/NewCityEnums.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/swach/webservice/RestService.java" afterPath="$PROJECT_DIR$/src/main/java/com/swach/webservice/RestService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/swach/db/SwachDBManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/swach/db/SwachDBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/swach/listener/TwitterConnectionServletListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/swach/listener/TwitterConnectionServletListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/swach/dto/TwitterData.java" afterPath="$PROJECT_DIR$/src/main/java/com/swach/dto/TwitterData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/swach/validator/TwitterHashTagValidator.java" afterPath="$PROJECT_DIR$/src/main/java/com/swach/validator/TwitterHashTagValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/swach/webservice/TwitterResponseFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/swach/webservice/TwitterResponseFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/swach/listener/TwitterSwachListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/swach/listener/TwitterSwachListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/TwitterTest.java" afterPath="$PROJECT_DIR$/src/main/java/TwitterTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Swach_Bharat.iws" />
