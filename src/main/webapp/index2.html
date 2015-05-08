@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Heatmaps</title>
+<style>
+
+    html, body, #map-canvas {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
+    }
+    #panel {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -180px;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    }
+</style>
+<!--  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"> -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwc_len-PRWjzBTyO-PUJBFRW7PPdNJoE&libraries=visualization"></script> 
+  <script src="js/heatmap.js"></script> 
+  <script src="js/gmaps-heatmap.js"></script>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script>
+
+ function refreshPage() { location.reload(); }
+    $(document).ready(function () {
+       setInterval('refreshPage()', 120000);
+    });
+
+
+   var tweetData = new Array();
+$.ajax({
+  type: "GET",
+  url: "https://swachdesh.herokuapp.com/swach/rest/twitter/gettweet/",
+  dataType: "json",
+  success: function(data) {
+   
+    data = $.parseJSON(JSON.stringify(data));
+  // data = $.parseJSON(data);
+    
+   $.each(data, function(i, item) {
+
+     //tweetData.push(new google.maps.LatLng(item.latitude, item.longitude,2));
+	 tweetData.push("lat:" item.latitude, lng:item.longitude, count:1);
+  });
+
+  },
+  error: function (e) {
+    //alert('KO: '+ e.text);
+    console.log(e);
+   // alert("Status is: " + e.statusText);
+  }
+}); 
+
+
+
+var map, pointarray, heatmap;
+
+
+
+//function initialize() {
+  var mapOptions = {
+    zoom: 14,
+    center: new google.maps.LatLng(12.971598, 77.594562),
+    mapTypeId: google.maps.MapTypeId.HYBRID
+  };
+
+
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+
+	  
+	  
+	  // heatmap layer
+heatmap = new HeatmapOverlay(map, 
+  {
+    // radius should be small ONLY if scaleRadius is true (or small radius is intended)
+    "radius": 2,
+    "maxOpacity": 1, 
+    // scales the radius based on map zoom
+    "scaleRadius": true, 
+    // if set to false the heatmap uses the global maximum for colorization
+    // if activated: uses the data maximum within the current map boundaries 
+    //   (there will always be a red spot with useLocalExtremas true)
+    "useLocalExtrema": true,
+    // which field name in your data represents the latitude - default "lat"
+    latField: 'lat',
+    // which field name in your data represents the longitude - default "lng"
+    lngField: 'lng',
+    // which field name in your data represents the data value - default "value"
+    valueField: 'count'
+  }
+);
+//}
+
+var testData = {
+          max:8,
+          data:tweetData
+        };
+
+//heatmap.setData(testData);
+ heatmap.setData(testData);
+
+
+</script>
+</head>
+
+<body>
+<!--<div id="panel">
+    <button onclick="toggleHeatmap()">Toggle Heatmap</button>
+    <button onclick="changeGradient()">Change gradient</button>
+    <button onclick="changeRadius()">Change radius</button>
+    <button onclick="changeOpacity()">Change opacity</button>
+
+</div> -->
+<div id="map-canvas"  style="width:60%; height:70%; margin:0 auto" ></div>
+</body>
+</html>;
